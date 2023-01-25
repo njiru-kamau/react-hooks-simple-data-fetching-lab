@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      {'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cdc.gov%2Fhealthypets%2Fpets%2Fdogs.html&psig=AOvVaw3zW8sVFq_p6Qf0Q90qwWsF&ust=1673927031837000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCPj7nKmWy_wCFQAAAAAdAAAAABAD'} alt="A Random Dog" 
+      {isLoading ? 'Loading...' : <img src={imageUrl || 'default_image_url'} alt="A Random Dog" />}
     </div>
   );
 }
